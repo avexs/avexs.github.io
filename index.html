@@ -88,6 +88,9 @@
         border-color: #5C6BC0;
         text-align: center;
     }
+    
+    .card-title,
+    .card-text {}
 
 </style>
 
@@ -112,128 +115,140 @@
     </nav>
 
     <div class="container">
-        <div id="projects" class="row projectContent" style="background-color:#7E57C2; text-align:center;">
-            <div class="col-md-12 jumbotron" style="background-color:#9575CD;">
-                <h1>Projects</h1>
-            </div>
-        </div>
+
         <div class="row" style="background-color:#7E57C2;">
             <div class="col-md-12">
-                <div class="col-md-6 projectContent">
-                    <h2>Personal Website</h2>
-
-                    <span class="fa-stack fa-5x">
-                        <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
-                        <i class="fa fa-desktop fa-stack-1x "></i>
-                        <a id="moreInfo" type="button" id="moreInfo" style="color:#68EFAD;" >
-                            <i class="fa fa-circle fa-stack-2x" style="opacity:.7"></i>
-                            <i class="fa fa-search fa-stack-1x fa-inverse" ></i>
-                        </a>
-                    </span>
-                    <p>HTML/CSS/Bootstrap/fontAwesome</p>
-                    <p>A continual work in progress. I started this project to learn more about web development and the importance of creating a personal brand. The layout of my website is written from scratch, without the help from any templates. This was to ensure that I would learn everything involved in bringing a responsive website to life; from a shaky conceptual idea, to a fully functioning site. I will be consistently working on this site and documenting my progress.</p>
-                    <p>To learn more click on the computer icon above.</p>
+                <div id="projects" class="row projectContent" style="padding:0; padding-bottom: 2.5%;text-align:center;">
+                    <div class="col-md-12 jumbotron">
+                        <h1>Projects</h1>
+                    </div>
                 </div>
-                <div class="col-md-6 projectContent">
-                    <h2>RGB Rubix Cube</h2>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="col-md-6 projectContent">
+                            <h2>Personal Website</h2>
 
-                    <span class="fa-stack fa-5x">
-                        <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
-                        <i class="fa fa-cube fa-stack-1x "></i>
-                        <a type="button" id="moreInfo">
-                            <i class="fa fa-circle fa-stack-2x" style="opacity:.7;color:#68EFAD;"></i>
-                            <i class="fa fa-search fa-stack-1x fa-inverse" ></i>
-                        </a>
-                    </span>
-                    <p>Making a three-dimensional rubix cube using RBG leds and an Arduino</p>
-                    <p>Future plans to synthesize the project with gate-level logic</p>
-                </div>
-            </div>
-        </div>
-
-
-        <br/>
-        <br/>
-
-
-        <div class="row resumeContent resumebackground" id="resume" style="text-align:center;">
-            <div class="col-md-12 jumbotron ">
-                <h1>Resume</h1>
-            </div>
-        </div>
-
-        <div class="row resumebackground" style="padding:1.25%;">
-            <div class="col-md-12">
-                <div class="card-deck-wrapper">
-                    <div class="card-deck" style="width:100%; ">
-                        <div class="card resumeCard" style="text-align:center;">
-                            <h2 class="card-header">Education</h2>
-                            <div class="card-img-top fa fa-stack fa-4x">
-                                <i class="fa fa-square fa-stack-2x fa-inverse resume-sq-icon" aria-hidden="true"></i>
-                                <i class="fa fa-university fa-stack-1x" aria-hidden="true"></i>
-                            </div>
-                            <div class="card-block" style="text-align:left;">
-                                <h4 class="card-title">School</h4>
-                                <p class="card-text">Case Western Reserve University</p>
-                                <h4 class="card-title">Major</h4>
-                                <p class="card-text">Computer Engineering</p>
-                                <h4 class="card-title">GPA</h4>
-                                <p class="card-text">
-                                    <bold>3.8</bold>
-                                </p>
-                                <h4 class="card-title">Expected Graduation</h4>
-                                <p class="card-text">May, 2018</p>
-                            </div>
-                            <div class="card-footer">
-                                <a class="btn btn-lg btn-primary" type="button" href="assets/documents/resume.pdf" style="text-decoration:none;">RESUME</a>
-                            </div>
+                            <span class="fa-stack fa-5x">
+                                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                                <i class="fa fa-desktop fa-stack-1x "></i>
+                                <a id="moreInfo" type="button" id="moreInfo" style="color:#68EFAD;" >
+                                    <i class="fa fa-circle fa-stack-2x" style="opacity:.7"></i>
+                                    <i class="fa fa-search fa-stack-1x fa-inverse" ></i>
+                                </a>
+                            </span>
+                            <p>HTML/CSS/Bootstrap/fontAwesome</p>
+                            <p>A continual work in progress. I started this project to learn more about web development and the importance of creating a personal brand. The layout of my website is written from scratch, without the help from any templates. This was to ensure that I would learn everything involved in bringing a responsive website to life; from a shaky conceptual idea, to a fully functioning site. I will be consistently working on this site and documenting my progress.</p>
+                            <p>To learn more click on the computer icon above.</p>
                         </div>
-                        <div class="card resumeCard" style="text-align:center;">
-                            <h2 class="card-header">Work Experience</h2>
-                            <div class="card-img-top fa fa-stack fa-4x">
-                                <i class="fa fa-square fa-stack-2x fa-inverse resume-sq-icon" aria-hidden="true"></i>
-                                <i class="fa fa-briefcase fa-stack-1x" aria-hidden="true"></i>
-                            </div>
-                            <div class="card-block" style="text-align:left;">
-                                <h4 class="card-text">Software Developer</h4>
-                                <p class="card-text">iNetPublicSafety</p>
-                                <p class="card-text">Summer 2016</p>
-                                <h4 class="card-text">Software Development Intern</h4>
-                                <p class="card-text">iNetPublicSafety</p>
-                                <p class="card-text">Summer 2015</p>
-                                <h4 class="card-text">Summer Camp Counselor</h4>
-                                <p class="card-text">Phoenix Country Day School</p>
-                                <p class="card-text">Summer 2012,2013,2014</p>
-                            </div>
-                            <div class="card-footer">
-                                <a class="btn btn-lg btn-primary" type="button" href="assets/documents/resume.pdf" style="text-decoration:none;">RESUME</a>
-                            </div>
-                        </div>
-                        <div class="card resumeCard" style="text-align:center;">
-                            <h2 class="card-header">Leadership</h2>
-                            <div class="card-img-top fa fa-stack fa-4x">
-                                <i class="fa fa-square fa-stack-2x fa-inverse resume-sq-icon" aria-hidden="true"></i>
-                                <i class="fa fa-graduation-cap fa-stack-1x" aria-hidden="true"></i>
-                            </div>
-                            <div class="card-block" style="text-align:left;">
-                                <h4 class="card-text">Phi Kappa Theta - Ohio, Alpha Beta</h4>
-                                <p class="card-text">Vice President of Fraternal (exec board)</p>
-                                <p class="card-text">Administrator of Property</p>
-                                <p class="card-text">House-Improvement Chair</p>
-                                <p class="card-text">Public Relations Chair</p>
-                                <h4 class="card-text">Longboard Club</h4>
-                                <p class="card-text">Public Relations Chair (exec board)</p>
-                            </div>
-                            <div class="card-footer">
-                                <a class="btn btn-lg btn-primary" type="button" href="assets/documents/resume.pdf" style="text-decoration:none;">RESUME</a>
-                            </div>
+                        <div class="col-md-6 projectContent">
+                            <h2>RGB Rubix Cube</h2>
+
+                            <span class="fa-stack fa-5x">
+                                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                                <i class="fa fa-cube fa-stack-1x "></i>
+                                <a type="button" id="moreInfo">
+                                    <i class="fa fa-circle fa-stack-2x" style="opacity:.7;color:#68EFAD;"></i>
+                                    <i class="fa fa-search fa-stack-1x fa-inverse" ></i>
+                                </a>
+                            </span>
+                            <p>Making a three-dimensional rubix cube using RBG leds and an Arduino</p>
+                            <p>Future plans to synthesize the project with gate-level logic</p>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
 
+        <br/>
+        <br/>
+
+
+        <div class="row resumebackground">
+
+            <div class="col-md-12">
+
+                <div class="row resumeContent" id="resume" style="text-align:center; padding-top:0; padding-left:0; padding-right:0;">
+                    <div class="col-md-12 jumbotron ">
+                        <h1>Resume</h1>
+                    </div>
+                </div>
+
+                <div class="row resumebackground" style="padding:1.25%;">
+                    <div class="col-md-12">
+                        <div class="card-deck-wrapper">
+                            <div class="card-deck" style="width:100%; ">
+                                <div class="card resumeCard" style="text-align:center;">
+                                    <h2 class="card-header">Education</h2>
+                                    <div class="card-img-top fa fa-stack fa-4x">
+                                        <i class="fa fa-square fa-stack-2x fa-inverse resume-sq-icon" aria-hidden="true"></i>
+                                        <i class="fa fa-university fa-stack-1x" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="card-block" style="text-align:left;">
+                                        <h4 class="card-title">School</h4>
+                                        <p class="card-text">Case Western Reserve University</p>
+                                        <h4 class="card-title">Major</h4>
+                                        <p class="card-text">Computer Engineering</p>
+                                        <h4 class="card-title">GPA</h4>
+                                        <p class="card-text">
+                                            <bold>3.8</bold>
+                                        </p>
+                                        <h4 class="card-title">Expected Graduation</h4>
+                                        <p class="card-text">May, 2018</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a class="btn btn-lg btn-primary" type="button" href="assets/documents/resume.pdf" style="text-decoration:none;">RESUME</a>
+                                    </div>
+                                </div>
+                                <div class="card resumeCard" style="text-align:center;">
+                                    <h2 class="card-header">Work Experience</h2>
+                                    <div class="card-img-top fa fa-stack fa-4x">
+                                        <i class="fa fa-square fa-stack-2x fa-inverse resume-sq-icon" aria-hidden="true"></i>
+                                        <i class="fa fa-briefcase fa-stack-1x" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="card-block" style="text-align:left;">
+                                        <h4 class="card-text">Software Developer</h4>
+                                        <p class="card-text">iNetPublicSafety</p>
+                                        <p class="card-text">Summer 2016</p>
+                                        <h4 class="card-text">Software Development Intern</h4>
+                                        <p class="card-text">iNetPublicSafety</p>
+                                        <p class="card-text">Summer 2015</p>
+                                        <h4 class="card-text">Summer Camp Counselor</h4>
+                                        <p class="card-text">Phoenix Country Day School</p>
+                                        <p class="card-text">Summer 2012,2013,2014</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a class="btn btn-lg btn-primary" type="button" href="assets/documents/resume.pdf" style="text-decoration:none;">RESUME</a>
+                                    </div>
+                                </div>
+                                <div class="card resumeCard" style="text-align:center;">
+                                    <h2 class="card-header">Leadership</h2>
+                                    <div class="card-img-top fa fa-stack fa-4x">
+                                        <i class="fa fa-square fa-stack-2x fa-inverse resume-sq-icon" aria-hidden="true"></i>
+                                        <i class="fa fa-graduation-cap fa-stack-1x" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="card-block" style="text-align:left;">
+                                        <h4 class="card-text">Phi Kappa Theta - Ohio, Alpha Beta</h4>
+                                        <p class="card-text">Vice President of Fraternal (exec board)</p>
+                                        <p class="card-text">Administrator of Property</p>
+                                        <p class="card-text">House-Improvement Chair</p>
+                                        <p class="card-text">Public Relations Chair</p>
+                                        <h4 class="card-text">Longboard Club</h4>
+                                        <p class="card-text">Public Relations Chair (exec board)</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a class="btn btn-lg btn-primary" type="button" href="assets/documents/resume.pdf" style="text-decoration:none;">RESUME</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
             </div>
 
         </div>
+
 
 
 

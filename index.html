@@ -24,6 +24,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         font-family: 'Source Sans Pro', sans-serif;
+        position: relative;
     }
     
     .navbar {
@@ -55,7 +56,7 @@
     }
     
     .btn-primary {
-        background-color: #FFC299;
+        background-color: #FFA67C;
         border: 0px;
     }
     
@@ -79,17 +80,18 @@
     }
     
     .card-deck .card {
-        padding-bottom: 60px;
+        padding-bottom: 70px;
     }
     
     .resumeCard {
         background-color: #5C6BC0;
         border-color: #5C6BC0;
+        text-align: center;
     }
 
 </style>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
     <nav class="navbar navbar-fixed-top navbar-dark">
         <a class="navbar-brand" href="#">Stephen Marquis</a>
@@ -151,6 +153,7 @@
 
 
         <br/>
+        <br/>
 
 
         <div class="row resumeContent resumebackground" id="resume" style="text-align:center;">
@@ -159,81 +162,10 @@
             </div>
         </div>
 
-        <!-- <div class="row resumebackground">
-            <div class="col-md-12">
-                <div class="col-md-6 resumeContent">
-                    <div class="fa fa-stack fa-4x">
-                        <i class="fa fa-square fa-stack-2x fa-inverse resume-sq-icon" aria-hidden="true"></i>
-                        <i class="fa fa-university fa-stack-1x" aria-hidden="true"></i>
-                    </div>
-
-                    <div class="container-fluid resumeContentText">
-                        <h4>School</h4>
-                        <p>Case Western Reserve University</p>
-                        <h4>Major</h4>
-                        <p>Computer Engineering</p>
-                        <h4>GPA</h4>
-                        <p><strong>3.74</strong></p>
-                        <h4>Graduation</h4>
-                        <p>2018</p>
-                    </div>
-
-                </div>
-                <div class="col-md-6 resumeContent">
-                    <div class="fa fa-stack fa-4x">
-                        <i class="fa fa-square fa-stack-2x fa-inverse resume-sq-icon" aria-hidden="true"></i>
-                        <i class="fa fa-briefcase fa-stack-1x" aria-hidden="true"></i>
-                    </div>
-                    <div class="container-fluid resumeContentText">
-                        <h4>Software Developer</h4>
-                        <p>iNetPublicSafety</p>
-                        <p>Summer 2016</p>
-                        <h4>Software Development Intern</h4>
-                        <p>iNetPublicSafety</p>
-                        <p>Summer 2015</p>
-                        <h4>Summer Camp Counselor</h4>
-                        <p>Phoenix Country Day School</p>
-                        <p>Summer 2012,2013,2014</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <div class="row resumebackground">
-            <div class="col-md-12">
-                <div class="col-md-6 resumeContent">
-                    <div class="fa fa-stack fa-4x">
-                        <i class="fa fa-square fa-stack-2x fa-inverse resume-sq-icon" aria-hidden="true"></i>
-                        <i class="fa fa-graduation-cap fa-stack-1x" aria-hidden="true"></i>
-                    </div>
-                    <div class="container-fluid resumeContentText">
-                        <h4>Phi Kappa Theta - Ohio, Alpha Beta</h4>
-                        <p>Vice President of Fraternal</p>
-                        <p>Administrator of Property</p>
-                        <p>House-Improvement Chair</p>
-                        <p>Public Relations Chair</p>
-                        <h4>Longboard Club</h4>
-                        <p>Public Relations Chair (exec board)</p>
-                    </div>
-                </div>
-                <div class="col-md-6 resumeContent">
-                    <div class="fa fa-stack fa-4x">
-                        <i class="fa fa-square fa-stack-2x fa-inverse resume-sq-icon" aria-hidden="true"></i>
-                        <i class="fa fa-file-text fa-stack-1x" aria-hidden="true"></i>
-                    </div>
-                    <div class="container-fluid resumeContentText">
-                        <h4>Full Resume</h4>
-                        <p>If you are interested in viewing my full resume, click the link below.</p>
-                        <a class="btn btn-lg btn-primary" type="button" href="assets/documents/resume.pdf" style="text-decoration:none;">RESUME</a>
-                    </div>
-                </div>
-            </div>
-        </div>-->
-
-        <div class="row resumebackground">
+        <div class="row resumebackground" style="padding:1.25%;">
             <div class="col-md-12">
                 <div class="card-deck-wrapper">
-                    <div class="card-deck" style="width:100%;">
+                    <div class="card-deck" style="width:100%; ">
                         <div class="card resumeCard" style="text-align:center;">
                             <h2 class="card-header">Education</h2>
                             <div class="card-img-top fa fa-stack fa-4x">
@@ -246,9 +178,11 @@
                                 <h4 class="card-title">Major</h4>
                                 <p class="card-text">Computer Engineering</p>
                                 <h4 class="card-title">GPA</h4>
-                                <p class="card-text"><strong>3.74</strong></p>
-                                <h4 class="card-title">Graduation</h4>
-                                <p class="card-text">2018</p>
+                                <p class="card-text">
+                                    <bold>3.8</bold>
+                                </p>
+                                <h4 class="card-title">Expected Graduation</h4>
+                                <p class="card-text">May, 2018</p>
                             </div>
                             <div class="card-footer">
                                 <a class="btn btn-lg btn-primary" type="button" href="assets/documents/resume.pdf" style="text-decoration:none;">RESUME</a>
@@ -283,7 +217,7 @@
                             </div>
                             <div class="card-block" style="text-align:left;">
                                 <h4 class="card-text">Phi Kappa Theta - Ohio, Alpha Beta</h4>
-                                <p class="card-text">Vice President of Fraternal</p>
+                                <p class="card-text">Vice President of Fraternal (exec board)</p>
                                 <p class="card-text">Administrator of Property</p>
                                 <p class="card-text">House-Improvement Chair</p>
                                 <p class="card-text">Public Relations Chair</p>
@@ -325,6 +259,10 @@
                 $('.navbar').removeClass('navbar-fade');
             }
         }, false);
+
+        $('[data-spy="scroll"]').each(function() {
+            var $spy = $(this).scrollspy('refresh')
+        })
 
     </script>
 

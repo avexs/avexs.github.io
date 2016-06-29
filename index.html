@@ -23,7 +23,6 @@
         background-attachment: fixed;
         background-repeat: no-repeat;
         background-size: cover;
-        font-family: 'Source Sans Pro', sans-serif;
         position: relative;
     }
     
@@ -50,7 +49,8 @@
     }
     
     .projectContent,
-    .resumeContent {
+    .resumeContent,
+    .aboutMeContent {
         padding: 1.25%;
         padding-bottom: 2.5%;
     }
@@ -67,7 +67,8 @@
     .jumbotron,
     .card,
     .card-header,
-    .card-footer {
+    .card-footer,
+    .card-img {
         -webkit-border-radius: 0 !important;
         -moz-border-radius: 0 !important;
         border-radius: 0 !important;
@@ -95,6 +96,16 @@
     .projectBackground {
         background-color: #9575CD;
     }
+    
+    .aboutMeBackground {
+        background-color: #64B5F6;
+    }
+    
+    .aboutMeCard {
+        background-color: #42A5F5;
+        border-color: #42A5F5;
+        text-align: center;
+    }
 
 </style>
 
@@ -113,7 +124,7 @@
                 <a class="nav-link" href="#resume">Resume</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#aboutMe">About</a>
+                <a class="nav-link" href="#aboutMe">AboutMe</a>
             </li>
         </ul>
     </nav>
@@ -261,19 +272,46 @@
 
         </div>
 
+        <br/>
+        <br/>
 
 
-
-        <div id="aboutMe" class="row">
+        <div class="row aboutMeBackground">
             <div class="col-md-12">
-                <div class="col-md-6">
 
+                <div class="row" id="aboutMe">
+                    <div class="col-md-12 jumbotron" style="text-align:center;">
+                        <h1>About Me</h1>
+                    </div>
                 </div>
-                <div class="col-md-6">
 
+                <div class="row aboutMeContent">
+                    <div class="col-md-12">
+                        <div class="card-deck-wrapper">
+                            <div class="card-deck">
+                                <div class="card aboutMeCard" style="width:100%; border-color:#64B5F6;">
+                                    <h2 class="card-header">Who Am I?</h2>
+                                    <div class="card-block" style="text-align:left;">
+                                        <p class="card-text">I am currently a Junior at Case Western Reserve University. My major is Computer Engineering, since my interests extend heavily into both Computer Science and Electrical Engineering; with my passion lying in digital hardware.</p>
+                                        <p class="card-text">I am a proud brother of Phi Kappa Theta, Ohio Alpha Beta at Case. The brotherhood has become a very large part of my life ever since I joined. I have learned to be confident in who I am, and I have been pushed to take multiple leadership positions which I would have never considered previously. For my Junior year I will be taking a leadership postion on the executive board as the Vice President of Fraternity.</p>
+                                        <p class="card-text">I am also on the executive board of the Longboarding club at Case as the Public Relations Chair. And although these leadership positions take up much of my freetime, I also continue to persue my other hobbies. I think of myself as an amateur artist. I have spent the last couple of years practicing my skills in drawing, painting, design, and more recently photography. When I end up spending several days finishing various homework assignments and studying to master concepts, I find relief in the fact that I can sit down and sketch whatever comes to my mind, or explore the world and shoot a roll of film.</p>
+                                    </div>
+                                </div>
+                                <div class="card aboutMeCard" style="background-color:#64B5F6;border-color:#64B5F6;">
+                                    <img class="card-img" src="assets/images/longboard_dancer_me_small.png" alt="Picture of myself" style="max-height:500px;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+
         </div>
+
+        <br/>
+
+    </div>
+
     </div>
 
 

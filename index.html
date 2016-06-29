@@ -51,8 +51,8 @@
     
     .projectContent,
     .resumeContent {
-        padding: 2.5%;
-        text-align: center;
+        padding: 1.25%;
+        padding-bottom: 2.5%;
     }
     
     .btn-primary {
@@ -79,18 +79,22 @@
         width: 100%;
     }
     
-    .card-deck .card {
-        padding-bottom: 70px;
-    }
-    
     .resumeCard {
         background-color: #5C6BC0;
         border-color: #5C6BC0;
         text-align: center;
+        padding-bottom: 70px;
     }
     
-    .card-title,
-    .card-text {}
+    .projectCard {
+        background-color: #7E57C2;
+        border-color: #7E57C2;
+        text-align: center;
+    }
+    
+    .projectBackground {
+        background-color: #9575CD;
+    }
 
 </style>
 
@@ -116,48 +120,56 @@
 
     <div class="container">
 
-        <div class="row" style="background-color:#7E57C2;">
+        <div class="row projectBackground">
             <div class="col-md-12">
-                <div id="projects" class="row projectContent" style="padding:0; padding-bottom: 2.5%;text-align:center;">
+                <div id="projects" class="row" style="padding:0; text-align:center;">
                     <div class="col-md-12 jumbotron">
                         <h1>Projects</h1>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row projectContent">
                     <div class="col-md-12">
-                        <div class="col-md-6 projectContent">
-                            <h2>Personal Website</h2>
+                        <div class="card-deck-wrapper">
+                            <div class="card-deck" style="width100%;">
+                                <div class="card projectCard">
+                                    <h2 class="card-header">Personal Website</h2>
+                                    <div class="card-block">
+                                        <div class="card-img-top fa-stack fa-5x">
+                                            <i class="fa fa-square fa-stack-2x fa-inverse"></i>
+                                            <i class="fa fa-desktop fa-stack-1x "></i>
+                                            <a id="moreInfo" href="https://github.com/avexs/avexs.github.io" type="button" id="moreInfo" style="color:#68EFAD;">
+                                                <i class="fa fa-square fa-stack-2x" style="opacity:.7"></i>
+                                                <i class="fa fa-search fa-stack-1x fa-inverse"></i>
+                                            </a>
+                                        </div>
+                                        <p class="card-text">HTML/CSS/Bootstrap/fontAwesome</p>
+                                        <p class="card-text">The purpose of this project was to learn more about web development and the importance of creating a personal brand. I purposely avoided using a template when I began this project, since I wanted to have the full experience of designing and programming a responsive website. I knew I would not learn as much if I had chosen a template site; and although the aesthetics of the site maybe be lacking as a result of this decision, the payoff was completely worth it.</p>
+                                        <p class="card-text">If you are interested in viewing the source and bugs for this site, please click on the computer icon above to visit the github for this project.</p>
+                                    </div>
+                                </div>
 
-                            <span class="fa-stack fa-5x">
-                                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
-                                <i class="fa fa-desktop fa-stack-1x "></i>
-                                <a id="moreInfo" type="button" id="moreInfo" style="color:#68EFAD;" >
-                                    <i class="fa fa-circle fa-stack-2x" style="opacity:.7"></i>
-                                    <i class="fa fa-search fa-stack-1x fa-inverse" ></i>
-                                </a>
-                            </span>
-                            <p>HTML/CSS/Bootstrap/fontAwesome</p>
-                            <p>A continual work in progress. I started this project to learn more about web development and the importance of creating a personal brand. The layout of my website is written from scratch, without the help from any templates. This was to ensure that I would learn everything involved in bringing a responsive website to life; from a shaky conceptual idea, to a fully functioning site. I will be consistently working on this site and documenting my progress.</p>
-                            <p>To learn more click on the computer icon above.</p>
-                        </div>
-                        <div class="col-md-6 projectContent">
-                            <h2>RGB Rubix Cube</h2>
-
-                            <span class="fa-stack fa-5x">
-                                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
-                                <i class="fa fa-cube fa-stack-1x "></i>
-                                <a type="button" id="moreInfo">
-                                    <i class="fa fa-circle fa-stack-2x" style="opacity:.7;color:#68EFAD;"></i>
-                                    <i class="fa fa-search fa-stack-1x fa-inverse" ></i>
-                                </a>
-                            </span>
-                            <p>Making a three-dimensional rubix cube using RBG leds and an Arduino</p>
-                            <p>Future plans to synthesize the project with gate-level logic</p>
+                                <div class="card projectCard">
+                                    <h2 class="card-header">RGB Rubix Cube</h2>
+                                    <div class="card-block">
+                                        <div class="card-img-top fa-stack fa-5x">
+                                            <i class="fa fa-square fa-stack-2x fa-inverse"></i>
+                                            <i class="fa fa-cube fa-stack-1x "></i>
+                                            <a type="button" id="moreInfo">
+                                                <i class="fa fa-square fa-stack-2x" style="opacity:.7;color:#68EFAD;"></i>
+                                                <i class="fa fa-search fa-stack-1x fa-inverse"></i>
+                                            </a>
+                                        </div>
+                                        <p class="card-text">Three-dimensional rubix cube using RBG leds and an Arduino</p>
+                                        <p class="card-text">This project began when I attended my very first hackathon, for which I unfortunately showed up on the last day and was unable to finish in time. The idea for this project was to create arrays of leds which would act as each face of the cube. Using switches, the user would be able to rotate portions of the cube. The plan for this project was to first implement the cube using an arduino as the logic controller, and to then later syntehsize the project using gate-level logic.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
 
         <br/>
         <br/>
@@ -167,13 +179,13 @@
 
             <div class="col-md-12">
 
-                <div class="row resumeContent" id="resume" style="text-align:center; padding-top:0; padding-left:0; padding-right:0;">
+                <div class="row resumeContent" id="resume" style="padding:0; text-align:center;">
                     <div class="col-md-12 jumbotron ">
                         <h1>Resume</h1>
                     </div>
                 </div>
 
-                <div class="row resumebackground" style="padding:1.25%;">
+                <div class="row resumeContent">
                     <div class="col-md-12">
                         <div class="card-deck-wrapper">
                             <div class="card-deck" style="width:100%; ">

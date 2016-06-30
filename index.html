@@ -12,11 +12,12 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <!-- Google open source font -->
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
 </head>
 <style>
     body {
         font-family: 'Source Sans Pro', sans-serif;
+        font-size: 18px;
         background-color: #7E57C2;
         padding-top: 10%;
         background-image: url(assets/images/tree.png);
@@ -60,10 +61,6 @@
         border: 0px;
     }
     
-    .resumebackground {
-        background-color: #7986CB;
-    }
-    
     .jumbotron,
     .card,
     .card-header,
@@ -74,37 +71,52 @@
         border-radius: 0 !important;
     }
     
+    .card-header,
+    .jumbotron {}
+    
+    .card-text {}
+    
     .card-footer {
         position: absolute;
         bottom: 0;
         width: 100%;
     }
     
-    .resumeCard {
+    .resumebackground {
         background-color: #5C6BC0;
-        border-color: #5C6BC0;
-        text-align: center;
-        padding-bottom: 70px;
-    }
-    
-    .projectCard {
-        background-color: #7E57C2;
-        border-color: #7E57C2;
-        text-align: center;
+        box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
     }
     
     .projectBackground {
-        background-color: #9575CD;
+        background-color: #7E57C2;
+        box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
     }
     
     .aboutMeBackground {
-        background-color: #64B5F6;
+        background-color: #42A5F5;
+        box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+    }
+    
+    .resumeCard {
+        background-color: #7986CB;
+        border-color: #7986CB;
+        text-align: center;
+        padding-bottom: 70px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    }
+    
+    .projectCard {
+        background-color: #9575CD;
+        border-color: #9575CD;
+        text-align: center;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     }
     
     .aboutMeCard {
-        background-color: #42A5F5;
-        border-color: #42A5F5;
+        background-color: #64B5F6;
+        border-color: #64B5F6;
         text-align: center;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     }
 
 </style>
@@ -154,7 +166,7 @@
                                             </a>
                                         </div>
                                         <p class="card-text">HTML/CSS/Bootstrap/fontAwesome</p>
-                                        <p class="card-text">The purpose of this project was to learn more about web development and the importance of creating a personal brand. I purposely avoided using a template when I began this project, since I wanted to have the full experience of designing and programming a responsive website. I knew I would not learn as much if I had chosen a template site; and although the aesthetics of the site maybe be lacking as a result of this decision, the payoff was completely worth it.</p>
+                                        <p class="card-text">The purpose of this project was to learn more about web development and the importance of creating a personal brand. I purposely avoided using a template when I began this project, since I wanted to have the full experience of designing and programming a responsive website. I knew I would not learn as much if I had chosen a template site; and although the framework acts as a layer of separation between the pure css, html and programmer, there is still knowledge and experience to be gained.</p>
                                         <p class="card-text">If you are interested in viewing the source and bugs for this site, please click on the computer icon above to visit the github for this project.</p>
                                     </div>
                                 </div>
@@ -207,16 +219,45 @@
                                         <i class="fa fa-university fa-stack-1x" aria-hidden="true"></i>
                                     </div>
                                     <div class="card-block" style="text-align:left;">
-                                        <h4 class="card-title">School</h4>
-                                        <p class="card-text">Case Western Reserve University</p>
-                                        <h4 class="card-title">Major</h4>
-                                        <p class="card-text">Computer Engineering</p>
-                                        <h4 class="card-title">GPA</h4>
-                                        <p class="card-text">
-                                            <bold>3.8</bold>
-                                        </p>
-                                        <h4 class="card-title">Expected Graduation</h4>
-                                        <p class="card-text">May, 2018</p>
+                                        <ul class="list-unstyled">
+                                            <li>
+                                                <h4 class="card-title">School</h4>
+                                                <ul>
+                                                    <li>
+                                                        <p class="card-text">Case Western Reserve University</p>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <h4 class="card-title">Major</h4>
+                                                <ul>
+                                                    <li>
+                                                        <p class="card-text">Computer Engineering</p>
+                                                    </li>
+                                                </ul>
+
+                                            </li>
+
+                                            <li>
+                                                <h4 class="card-title">GPA</h4>
+                                                <ul>
+                                                    <li>
+                                                        <p class="card-text">
+                                                            <bold>3.8</bold>
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </li>
+
+                                            <li>
+                                                <h4 class="card-title">Expected Graduation</h4>
+                                                <ul>
+                                                    <li>
+                                                        <p class="card-text">May, 2018</p>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
                                     </div>
                                     <div class="card-footer">
                                         <a class="btn btn-lg btn-primary" type="button" href="assets/documents/resume.pdf" style="text-decoration:none;">RESUME</a>
@@ -229,15 +270,43 @@
                                         <i class="fa fa-briefcase fa-stack-1x" aria-hidden="true"></i>
                                     </div>
                                     <div class="card-block" style="text-align:left;">
-                                        <h4 class="card-text">Software Developer</h4>
-                                        <p class="card-text">iNetPublicSafety</p>
-                                        <p class="card-text">Summer 2016</p>
-                                        <h4 class="card-text">Software Development Intern</h4>
-                                        <p class="card-text">iNetPublicSafety</p>
-                                        <p class="card-text">Summer 2015</p>
-                                        <h4 class="card-text">Summer Camp Counselor</h4>
-                                        <p class="card-text">Phoenix Country Day School</p>
-                                        <p class="card-text">Summer 2012,2013,2014</p>
+                                        <ul class="list-unstyled">
+                                            <li>
+                                                <h4 class="card-text ">Software Developer</h4>
+                                                <ul>
+                                                    <li>
+                                                        <p class="card-text ">iNetPublicSafety</p>
+                                                    </li>
+                                                    <li>
+                                                        <p class="card-text">Summer 2016</p>
+                                                    </li>
+                                                </ul>
+
+                                                <li>
+                                                    <h4 class="card-text">Software Development Intern</h4>
+                                                    <ul>
+                                                        <li>
+                                                            <p class="card-text">iNetPublicSafety</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="card-text">Summer 2015</p>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <h4 class="card-text">Summer Camp Counselor</h4>
+                                                    <ul>
+                                                        <li>
+                                                            <p class="card-text">Phoenix Country Day School</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="card-text">Summer 2012,2013,2014</p>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+
+                                        </ul>
+
                                     </div>
                                     <div class="card-footer">
                                         <a class="btn btn-lg btn-primary" type="button" href="assets/documents/resume.pdf" style="text-decoration:none;">RESUME</a>
@@ -250,13 +319,33 @@
                                         <i class="fa fa-graduation-cap fa-stack-1x" aria-hidden="true"></i>
                                     </div>
                                     <div class="card-block" style="text-align:left;">
-                                        <h4 class="card-text">Phi Kappa Theta - Ohio, Alpha Beta</h4>
-                                        <p class="card-text">Vice President of Fraternal (exec board)</p>
-                                        <p class="card-text">Administrator of Property</p>
-                                        <p class="card-text">House-Improvement Chair</p>
-                                        <p class="card-text">Public Relations Chair</p>
-                                        <h4 class="card-text">Longboard Club</h4>
-                                        <p class="card-text">Public Relations Chair (exec board)</p>
+                                        <ul class="list-unstyled">
+                                            <li>
+                                                <h4 class="card-text">Phi Kappa Theta - Ohio, Alpha Beta</h4>
+                                                <ul>
+                                                    <li>
+                                                        <p class="card-text">Vice President of Fraternal (exec board)</p>
+                                                    </li>
+                                                    <li>
+                                                        <p class="card-text">Administrator of Property</p>
+                                                    </li>
+                                                    <li>
+                                                        <p class="card-text">House-Improvement Chair</p>
+                                                    </li>
+                                                    <li>
+                                                        <p class="card-text">Public Relations Chair</p>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <h4 class="card-text">Longboard Club</h4>
+                                                <ul>
+                                                    <li>
+                                                        <p class="card-text">Public Relations Chair (exec board)</p>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
                                     </div>
                                     <div class="card-footer">
                                         <a class="btn btn-lg btn-primary" type="button" href="assets/documents/resume.pdf" style="text-decoration:none;">RESUME</a>
@@ -298,7 +387,7 @@
                                     </div>
                                 </div>
                                 <div class="card aboutMeCard" style="background-color:#64B5F6;border-color:#64B5F6;">
-                                    <img class="card-img" src="assets/images/longboard_dancer_me_small.png" alt="Picture of myself" style="max-height:500px;">
+                                    <img class="card-img" src="assets/images/longboard_dancer_me_small.png" alt="Picture of myself" style="max-height:100%;">
                                 </div>
                             </div>
                         </div>

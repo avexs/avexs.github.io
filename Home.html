@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- Google open source font -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:600" rel="stylesheet">
+</head>
+<style>
+    body {
+        font-family: 'Source Sans Pro', sans-serif;
+        background-color: #7E57C2;
+        padding-top: 10%;
+        background-image: url(assets/images/tree.png);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+    
+    .navbar {
+        background-color: rgba(48, 48, 48, .7);
+        -webkit-transition: background-color .5s linear;
+        transition: background-color .5s linear;
+    }
+    
+    .navbar-fade {
+        background-color: rgba(48, 48, 48, 1);
+    }
+    
+    .navbar-text {
+        color: #FFFFFF;
+    }
+    
+    #moreInfo {
+        opacity: 0;
+    }
+    
+    #moreInfo:hover {
+        opacity: 100;
+    }
+    
+    .projectContent,
+    .resumeContent {
+        padding: 2.5%;
+        text-align: center;
+    }
+    
+    .btn-primary {
+        background-color: #FFC299;
+        border: 0px;
+    }
+    
+    .resumebackground {
+        background-color: #7986CB;
+    }
+    
+    .jumbotron,
+    .card,
+    .card-header,
+    .card-footer {
+        -webkit-border-radius: 0 !important;
+        -moz-border-radius: 0 !important;
+        border-radius: 0 !important;
+    }
+    
+    .card-footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+    
+    .card-deck .card {
+        padding-bottom: 60px;
+    }
+    
+    .resumeCard {
+        background-color: #5C6BC0;
+        border-color: #5C6BC0;
+    }
+
+</style>
+
+<body>
+
+    <nav class="navbar navbar-fixed-top navbar-dark">
+        <a class="navbar-brand" href="#">Stephen Marquis</a>
+        <ul class="nav navbar-nav pull-right">
+            <li class="nav-item active">
+                <a class="nav-link" href="#entryImg">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#resume">Resume</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#aboutMe">About</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div id="projects" class="row projectContent" style="background-color:#7E57C2; text-align:center;">
+            <div class="col-md-12 jumbotron" style="background-color:#9575CD;">
+                <h1>Projects</h1>
+            </div>
+        </div>
+        <div class="row" style="background-color:#7E57C2;">
+            <div class="col-md-12">
+                <div class="col-md-6 projectContent">
+                    <h2>Personal Website</h2>
+
+                    <span class="fa-stack fa-5x">
+                        <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                        <i class="fa fa-desktop fa-stack-1x "></i>
+                        <a id="moreInfo" type="button" id="moreInfo" style="color:#68EFAD;" >
+                            <i class="fa fa-circle fa-stack-2x" style="opacity:.7"></i>
+                            <i class="fa fa-search fa-stack-1x fa-inverse" ></i>
+                        </a>
+                    </span>
+                    <p>HTML/CSS/Bootstrap/fontAwesome</p>
+                    <p>A continual work in progress. I started this project to learn more about web development and the importance of creating a personal brand. The layout of my website is written from scratch, without the help from any templates. This was to ensure that I would learn everything involved in bringing a responsive website to life; from a shaky conceptual idea, to a fully functioning site. I will be consistently working on this site and documenting my progress.</p>
+                    <p>To learn more click on the computer icon above.</p>
+                </div>
+                <div class="col-md-6 projectContent">
+                    <h2>RGB Rubix Cube</h2>
+
+                    <span class="fa-stack fa-5x">
+                        <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                        <i class="fa fa-cube fa-stack-1x "></i>
+                        <a type="button" id="moreInfo">
+                            <i class="fa fa-circle fa-stack-2x" style="opacity:.7;color:#68EFAD;"></i>
+                            <i class="fa fa-search fa-stack-1x fa-inverse" ></i>
+                        </a>
+                    </span>
+                    <p>Making a three-dimensional rubix cube using RBG leds and an Arduino</p>
+                    <p>Future plans to synthesize the project with gate-level logic</p>
+                </div>
+            </div>
+        </div>
+
+
+        <br/>
+
+
+        <div class="row resumeContent resumebackground" id="resume" style="text-align:center;">
+            <div class="col-md-12 jumbotron ">
+                <h1>Resume</h1>
+            </div>
+        </div>
+
+        <!-- <div class="row resumebackground">
+            <div class="col-md-12">
+                <div class="col-md-6 resumeContent">
+                    <div class="fa fa-stack fa-4x">
+                        <i class="fa fa-square fa-stack-2x fa-inverse resume-sq-icon" aria-hidden="true"></i>
+                        <i class="fa fa-university fa-stack-1x" aria-hidden="true"></i>
+                    </div>
+
+                    <div class="container-fluid resumeContentText">
+                        <h4>School</h4>
+                        <p>Case Western Reserve University</p>
+                        <h4>Major</h4>
+                        <p>Computer Engineering</p>
+                        <h4>GPA</h4>
+                        <p><strong>3.74</strong></p>
+                        <h4>Graduation</h4>
+                        <p>2018</p>
+                    </div>
+
+                </div>
+                <div class="col-md-6 resumeContent">
+                    <div class="fa fa-stack fa-4x">
+                        <i class="fa fa-square fa-stack-2x fa-inverse resume-sq-icon" aria-hidden="true"></i>
+                        <i class="fa fa-briefcase fa-stack-1x" aria-hidden="true"></i>
+                    </div>
+                    <div class="container-fluid resumeContentText">
+                        <h4>Software Developer</h4>
+                        <p>iNetPublicSafety</p>
+                        <p>Summer 2016</p>
+                        <h4>Software Development Intern</h4>
+                        <p>iNetPublicSafety</p>
+                        <p>Summer 2015</p>
+                        <h4>Summer Camp Counselor</h4>
+                        <p>Phoenix Country Day School</p>
+                        <p>Summer 2012,2013,2014</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="row resumebackground">
+            <div class="col-md-12">
+                <div class="col-md-6 resumeContent">
+                    <div class="fa fa-stack fa-4x">
+                        <i class="fa fa-square fa-stack-2x fa-inverse resume-sq-icon" aria-hidden="true"></i>
+                        <i class="fa fa-graduation-cap fa-stack-1x" aria-hidden="true"></i>
+                    </div>
+                    <div class="container-fluid resumeContentText">
+                        <h4>Phi Kappa Theta - Ohio, Alpha Beta</h4>
+                        <p>Vice President of Fraternal</p>
+                        <p>Administrator of Property</p>
+                        <p>House-Improvement Chair</p>
+                        <p>Public Relations Chair</p>
+                        <h4>Longboard Club</h4>
+                        <p>Public Relations Chair (exec board)</p>
+                    </div>
+                </div>
+                <div class="col-md-6 resumeContent">
+                    <div class="fa fa-stack fa-4x">
+                        <i class="fa fa-square fa-stack-2x fa-inverse resume-sq-icon" aria-hidden="true"></i>
+                        <i class="fa fa-file-text fa-stack-1x" aria-hidden="true"></i>
+                    </div>
+                    <div class="container-fluid resumeContentText">
+                        <h4>Full Resume</h4>
+                        <p>If you are interested in viewing my full resume, click the link below.</p>
+                        <a class="btn btn-lg btn-primary" type="button" href="assets/documents/resume.pdf" style="text-decoration:none;">RESUME</a>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+
+        <div class="row resumebackground">
+            <div class="col-md-12">
+                <div class="card-deck-wrapper">
+                    <div class="card-deck" style="width:100%;">
+                        <div class="card resumeCard" style="text-align:center;">
+                            <h2 class="card-header">Education</h2>
+                            <div class="card-img-top fa fa-stack fa-4x">
+                                <i class="fa fa-square fa-stack-2x fa-inverse resume-sq-icon" aria-hidden="true"></i>
+                                <i class="fa fa-university fa-stack-1x" aria-hidden="true"></i>
+                            </div>
+                            <div class="card-block" style="text-align:left;">
+                                <h4 class="card-title">School</h4>
+                                <p class="card-text">Case Western Reserve University</p>
+                                <h4 class="card-title">Major</h4>
+                                <p class="card-text">Computer Engineering</p>
+                                <h4 class="card-title">GPA</h4>
+                                <p class="card-text"><strong>3.74</strong></p>
+                                <h4 class="card-title">Graduation</h4>
+                                <p class="card-text">2018</p>
+                            </div>
+                            <div class="card-footer">
+                                <a class="btn btn-lg btn-primary" type="button" href="assets/documents/resume.pdf" style="text-decoration:none;">RESUME</a>
+                            </div>
+                        </div>
+                        <div class="card resumeCard" style="text-align:center;">
+                            <h2 class="card-header">Work Experience</h2>
+                            <div class="card-img-top fa fa-stack fa-4x">
+                                <i class="fa fa-square fa-stack-2x fa-inverse resume-sq-icon" aria-hidden="true"></i>
+                                <i class="fa fa-briefcase fa-stack-1x" aria-hidden="true"></i>
+                            </div>
+                            <div class="card-block" style="text-align:left;">
+                                <h4 class="card-text">Software Developer</h4>
+                                <p class="card-text">iNetPublicSafety</p>
+                                <p class="card-text">Summer 2016</p>
+                                <h4 class="card-text">Software Development Intern</h4>
+                                <p class="card-text">iNetPublicSafety</p>
+                                <p class="card-text">Summer 2015</p>
+                                <h4 class="card-text">Summer Camp Counselor</h4>
+                                <p class="card-text">Phoenix Country Day School</p>
+                                <p class="card-text">Summer 2012,2013,2014</p>
+                            </div>
+                            <div class="card-footer">
+                                <a class="btn btn-lg btn-primary" type="button" href="assets/documents/resume.pdf" style="text-decoration:none;">RESUME</a>
+                            </div>
+                        </div>
+                        <div class="card resumeCard" style="text-align:center;">
+                            <h2 class="card-header">Leadership</h2>
+                            <div class="card-img-top fa fa-stack fa-4x">
+                                <i class="fa fa-square fa-stack-2x fa-inverse resume-sq-icon" aria-hidden="true"></i>
+                                <i class="fa fa-graduation-cap fa-stack-1x" aria-hidden="true"></i>
+                            </div>
+                            <div class="card-block" style="text-align:left;">
+                                <h4 class="card-text">Phi Kappa Theta - Ohio, Alpha Beta</h4>
+                                <p class="card-text">Vice President of Fraternal</p>
+                                <p class="card-text">Administrator of Property</p>
+                                <p class="card-text">House-Improvement Chair</p>
+                                <p class="card-text">Public Relations Chair</p>
+                                <h4 class="card-text">Longboard Club</h4>
+                                <p class="card-text">Public Relations Chair (exec board)</p>
+                            </div>
+                            <div class="card-footer">
+                                <a class="btn btn-lg btn-primary" type="button" href="assets/documents/resume.pdf" style="text-decoration:none;">RESUME</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <div id="aboutMe" class="row">
+            <div class="col-md-12">
+                <div class="col-md-6">
+
+                </div>
+                <div class="col-md-6">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript">
+        window.addEventListener("scroll", function() {
+            if (window.scrollY > 100) {
+                $('.navbar').addClass('navbar-fade');
+
+            } else {
+                $('.navbar').removeClass('navbar-fade');
+            }
+        }, false);
+
+    </script>
+
+
+    <!-- jQuery first, then Bootstrap JS. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+</body>
+
+</html>
